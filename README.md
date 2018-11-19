@@ -8,7 +8,7 @@ Our coding standard will mostly follow [PSR1](http://www.php-fig.org/psr/psr-1/)
 
 ### Key Overview
 * Files MUST use only `<?php` and `<?=` tags.
-* Class names MUST be declared in `StudlyCaps`.
+* Class names MUST be declared in `PascalCase`.
 * Class constants MUST be declared in all upper case with underscore separators.
 * Method names MUST be declared in `camelCase`.
 * Code MUST use 4 spaces for indenting, not tabs.
@@ -19,7 +19,15 @@ Our coding standard will mostly follow [PSR1](http://www.php-fig.org/psr/psr-1/)
 * If possible, always use double quote `""` to enclose a string to enable embedding a variable.
 * Embedded variable inside a string should be enclosed by a curly bracket: `"this is a {$var}"`.
 * Method level variable MUST be declared in `$under_score`.
-* Class level properties MUST be declared in `$camelCase`
+* Class level properties MUST be declared in `$under_score`
+* Constant must go on the next line after class opening braces
+* Opening braces for method must go to the next line
+* Type hinting on parameter and return type should be used
+* Method return type hinting must go on the same line with method declaration
+* Nested expression on control structure condition is not allowed
+* If a control structure have more than 2 expression, separate each expression with a new line before the operator
+* Always use curly bracket for a control structure, except ternary operation
+* Always refer to the class directly when throwing an `\Exception`
 
 ### Documentation
 * to-do
