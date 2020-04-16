@@ -38,7 +38,7 @@ class VarNameShouldUnderscoreSniff implements Sniff
         $tokens = $phpcsFile->getTokens();
         $var_name = str_replace('$', '', $tokens[$stackPtr]['content']);
 
-        preg_match('/[A-Z^_]/', $var_name, $matches);
+        preg_match('/[A-Z]/', $var_name, $matches);
 
         if (count($matches) !== 0 && Common::isCamelCaps($var_name)) {
             $error = 'Variable "%s" is not in valid underscore format';
